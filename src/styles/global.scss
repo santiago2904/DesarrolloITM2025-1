@@ -1,0 +1,63 @@
+body {
+  background-color: #f0f0f0 !important; /* Fondo gris claro */
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 16px;
+}
+
+.card-wrapper {
+  width: 80%;
+  background-color: #fff; /* Fondo blanco */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 8px !important;
+  padding: 30px !important;
+}
+
+
+.table-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  width: 400px;
+}
+
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #dcd8d896; /* Un color más oscuro pero suave */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 16px; /* Espaciado interno */
+  margin-bottom: 16px; /* Separación respecto al contenido inferior */
+}
+
+.table-title {
+  font-weight: bold;
+  color: #333; /* Color oscuro del texto */
+  margin: 0 !important;
+}
+
+.header-container button {
+  font-size: 1rem; /* Tamaño del texto del botón */
+  padding: 8px 16px; /* Espaciado interno del botón */
+}
