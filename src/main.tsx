@@ -14,10 +14,10 @@ const root = ReactDOM.createRoot(rootElement!);
 
 // Renderiza la aplicación
 root.render(
-    <React.StrictMode>
+    //<React.StrictMode>
         <ThemeProvider theme={theme}>
             <CssBaseline />
             <App />
         </ThemeProvider>
-    </React.StrictMode>
+   // </React.StrictMode>
 );

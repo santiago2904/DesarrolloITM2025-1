@@ -49,6 +49,17 @@ body {
   border-radius: 8px; /* Bordes redondeados */
   padding: 16px; /* Espaciado interno */
   margin-bottom: 16px; /* Separación respecto al contenido inferior */
+
+  &--header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
 }
 
 .table-title {

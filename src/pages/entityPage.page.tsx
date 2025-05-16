@@ -9,7 +9,6 @@ import {
     Modal,
     TextField,
     Box,
-    Grid,
     TablePagination,
     Dialog,
     DialogActions,
@@ -166,7 +165,7 @@ function EntityPage() {
                         />
 
                         {/* Contenedor del título y botón */}
-                        <Box display="flex" justifyContent="space-between" alignItems="center" gap={'30px'}>
+                        <Box className={'header-container--header'}>
                             <Typography className="table-title" variant="h4" gutterBottom>
                                 {`Gestionar ${entity}`}
                             </Typography>
