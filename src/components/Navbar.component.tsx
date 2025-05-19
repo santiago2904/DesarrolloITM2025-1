@@ -51,35 +51,38 @@ const Navbar = () => {
               onClose={handleMenuClose}
             >
 
-              {hasRole(['admin', 'roleManager']) && (
+              {hasRole(['admin', 'Verificador', 'Validador', 'Administrativo', 'invitado']) && (
                 <MenuItem onClick={() => { navigate('/crud/rol'); handleMenuClose(); }}>Rol</MenuItem>
               )}
-              {hasRole(['admin', 'sourceManager']) && (
+              {hasRole(['admin', 'Verificador', 'Validador', 'Administrativo', 'invitado']) && (
                 <MenuItem onClick={() => { navigate('/crud/fuente'); handleMenuClose(); }}>Fuente</MenuItem>
               )}
-              {hasRole(['admin', 'sectionManager']) && (
+              {hasRole(['admin', 'Verificador', 'Validador', 'Administrativo', 'invitado']) && (
                 <MenuItem onClick={() => { navigate('/crud/seccion'); handleMenuClose(); }}>Sección</MenuItem>
               )}
-              {hasRole(['admin', 'subsectionManager']) && (
+              {hasRole(['admin', 'Verificador', 'Validador', 'Administrativo', 'invitado']) && (
                 <MenuItem onClick={() => { navigate('/crud/subseccion'); handleMenuClose(); }}>Subsección</MenuItem>
               )}
             </Menu> 
-            {hasRole(['admin', 'invitado']) && (
+            {hasRole(['admin']) && (
               <Button color="inherit" onClick={() => navigate('/crud/usuario')}>Usuarios</Button>
             )}
-            {hasRole(['admin']) && (
+            {hasRole(['admin', 'Verificador', 'Validador', 'Administrativo', 'invitado']) && (
+              <Button color="inherit" onClick={() => navigate('/crud/subseccion')}>Subsección</Button>
+            )}
+            {hasRole(['admin', 'Verificador', 'Validador', 'Administrativo', 'invitado']) && (
               <Button color="inherit" onClick={() => navigate('/fk/indicatorresult')}>Resultados</Button>
             )}
-            {hasRole(['admin', 'invitado']) && (
+            {hasRole(['admin', 'Verificador', 'Validador', 'Administrativo', 'invitado']) && (
               <Button color="inherit" onClick={() => navigate('/fk/indicatorvariables')}>Variables</Button>
             )}
-            {hasRole(['admin', 'user']) && (
+            {hasRole(['admin', 'Verificador', 'Validador', 'Administrativo', 'invitado']) && (
               <Button color="inherit" onClick={() => navigate('/fk/variablesusers')}>Usuarios Variables</Button>
             )}
-            {hasRole(['admin', 'actor']) && (
+            {hasRole(['admin', 'Verificador', 'Validador', 'Administrativo', 'invitado']) && (
               <Button color="inherit" onClick={() => navigate('/fk/actor')}>Actores</Button>
             )}
-            {hasRole(['admin', 'indicator']) && (
+            {hasRole(['admin', 'Verificador', 'Validador', 'Administrativo', 'invitado']) && (
               <Button color="inherit" onClick={() => navigate('/fk/indicators')}>Indicadores</Button>
             )}
             <Button color="inherit" onClick={handleLogout}>Cerrar Sesión</Button>

@@ -27,7 +27,7 @@ const Login = () => {
         title: 'Inicio de sesión exitoso',
         text: '¡Bienvenido!'
       });
-      navigate('/crud/usuario');
+      navigate('/fk/indicators');
     } catch (error) {
       console.error('Login failed', error);
       Swal.fire({
